@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="final.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Noto+Sans+Display&family=Open+Sans&family=Oswald:wght@200&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+
+  <!-- <span class="logo">
+  <a href="#" id="logo-img"><img src="logo-final.png" id="final-img" alt=""></a>
+</span> -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+  <div class="navbar ">
+
+    <!-- TABS HERE -->
+    <div class="tabs">
+    <ul class="tab-header">
+      <li class="list "  data-id="home">
+        <a href="#" data-id="home">
+          <span class="icon" data-id="home"><ion-icon name="home-outline" data-id="home"></ion-icon></span>
+          <span class="title" data-id="home">Home</span>
+        </a>
+      </li>
+
+      <li class="list"  data-id="image-c2">
+        <a href="#" data-id="image-c2">
+          <span class="icon" data-id="image-c2"><ion-icon name="images-outline" data-id="image-c2"></ion-icon></span>
+          <span class="title" data-id="image-c2">Image</span>
+        </a>
+      </li>
+
+      <li class="list active"  data-id="text-c1">
+        <a href="#" data-id="text-c1" >
+          <span class="icon" data-id="text-c1"><ion-icon name="text-outline" data-id="text-c1"></ion-icon></span>
+          <span class="title" data-id="text-c1">Text</span>
+        </a>
+      </li>
+
+      <li class="list"  data-id="email-c3">
+        <a href="#" data-id="email-c3">
+          <span class="icon" data-id="email-c3"><ion-icon name="mail-outline" data-id="email-c3"></ion-icon></span>
+          <span class="title" data-id="email-c3">E-mail</span>
+        </a>
+      </li>
+
+      <li class="list" data-id="share-c4">
+        <a href="#" data-id="share-c4">
+          <span class="icon" data-id="share-c4"><ion-icon name="share-social-outline" data-id="share-c4"></ion-icon></span>
+          <span class="title" data-id="share-c4">Share</span>
+        </a>
+      </li>
+
+      <li class="list"  data-id="dark-mode-c5">
+        <a href="#" data-id="dark-mode-c5">
+          <span class="icon" data-id="dark-mode-c5"><ion-icon name="contrast-outline" data-id="dark-mode-c5"></ion-icon></span>
+          <span class="title" data-id="dark-mode-c5">Dark Mode</span>
+        </a>
+      </li>
+
+
+    </ul>
+
+    </div>
+    </div>
+
+      <!-- TAB CONTENT HERE -->
+      <div class="tab-content">
+     <!-- TAB CONTENT TEXT C1 -->
+      <div class="tab-inner  " id="text-c1">
+      <div class="form-element">
+        <label for="data-ip" id="data-ip-text" >
+
+          <h1 id="data-ip-h1">Enter your text</h1>
+          <h5 id="data-ip-h2">Press generate qr code to get your qr code</h5>
+        </label>
+        <input type="text" id="data-ip" placeholder="type your text here" >
+      </div>
+    </div>
+
+    <!-- TAB CONTENT IMAGE C2 -->
+    <div class="tab-inner active " id="image-c2">
+
+      <section class="upload-container">
+        <form action="">
+            <div class="drop-zone">
+                <div class="icon-container">
+                    <img src="drag-and-dorp.png" draggable="false" class="center" alt="File Icon">
+                    <img src="drag-and-dorp.png" draggable="false" class="left" alt="File Icon">
+                    <img src="drag-and-dorp.png" draggable="false" class="right" alt="File Icon">
+                </div>
+                <input type="file" id="fileInput">
+                <div class="title">Drop your Files here or, <span id="browseBtn">browse</span></div>
+            </div>
+        </form>
+        <div class="progress-container">
+            <div class="bg-progress"></div>
+
+            <div class="inner-container">
+                <div class="status">Uploading...</div>
+                <div class="percent-container">
+                    <span class="percentage" id="progressPercent">0</span>%
+                </div>
+                <div class="progress-bar"></div>
+            </div>
+
+        </div>
+        <div class="sharing-container">
+            <p class="expire">Link expires in 15 mins</p>
+
+
+            <div class="input-container">
+                <input type="text" id="fileURL" readonly>
+                <img src="copy-icon.png" id="copyURLBtn" alt="copy to clipboard icon">
+            </div>
+            <p class="email-info"></p>
+            <!-- <div class="">
+                <form id="emailForm">
+                    <div class="">
+                        <label for="fromEmail"></label>
+                        <input type="" autocomplete="email" required name="from-email" id="">
+                    </div>
+
+                    <div class="">
+                        <label for="toEmail"></label>
+                        <input type="email" required autocomplete="receiver" name="to-email" id="">
+                    </div>
+                    <div class="send-btn-container">
+                        <button type=""></button>
+                    </div> -->
+
+
+        </div>
+    </section>
+
+    </div>
+
+
+    <!-- TAB CONTENT EMAIL C3 -->
+    <div class="tab-inner" id="email-c3"></div>
+    <!-- TAB CONTENT  URL C4 -->
+    <div class="tab-inner" id="share-c4"></div>
+    <!-- TAB CONTENT PDF C5 -->
+    <div class="tab-inner" id="dark-mode-c5"></div>
+    <!-- TAB CONTENT VIDEO C6 -->
+    <!-- TAB CONTENT AUDIO C7 -->
+
+
+
+    </div>
+
+    <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+  <div class="qr-box">
+
+    <!-- qr generator -->
+
+    <h3></h3>
+        <br/>
+        <div>
+            <button class="qr-btn" onclick="generateQRCode()">Create QR Code</button>
+        </div>
+        <br/>
+        <p id="qr-result"></p>
+        <canvas id="qr-code"></canvas>
+      </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+		<script>
+			/* JS comes here */
+			var qr;
+			(function() {
+                    qr = new QRious({
+                    element: document.getElementById('qr-code'),
+                    size: 200,
+                    value: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                });
+            })();
+
+            function generateQRCode() {
+                var qrtext = document.getElementById("fileURL").value;
+                //document.getElementById("qr-result").innerHTML = "QR code for " + qrtext +":";
+                alert(qrtext);
+                qr.set({
+                    foreground: 'black',
+                    size: 200,
+                    value: qrtext
+                });
+            }
+		</script>
+
+
+
+
+
+
+  <!-- <div class="upload-box">
+    <h1 id="drop-heading">Drop your files here or Browse</h1>
+  </div> -->
+
+
+
+  <div class="toggle">
+
+    <ion-icon name="menu-outline" class="open"></ion-icon>
+    <ion-icon name="close-outline" class="close"></ion-icon>
+
+  </div>
+
+
+
+
+
+  <script src="final.js"></script>
+
+<!-- video ka inline js -->
+<script>
+// let tabs = document.querySelector(".tabs");
+// let tab_inner = document.querySelectorAll('.tab-inner');
+// let tab_li = document.querySelectorAll(".tab-header li");
+// // console.log(tab_li);
+// // console.log(tab_inner);
+
+// tabs.addEventListener("click",function(event){
+//   let id = event.target.dataset.id;
+
+//   if(id){
+//     tab_li.forEach((li_item) =>{
+//       li_item.classList.remove('active');
+//     })
+//     event.target.classList.add("active");
+//   }
+//   else{
+
+//   }
+
+
+//  });
+
+
+</script>
+
+</body>
+</html>
